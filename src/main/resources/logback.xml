@@ -2,12 +2,12 @@
 <configuration>
     <appender name="FILE"
               class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>/home/santhosh/santhosh2129-inventory.log</file>
+        <file>/Users/santhosh/santhosh2129-inventory.log</file>
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <Pattern>%d{yyyy-MM-dd_HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</Pattern>
         </encoder>
         <rollingPolicy class="ch.qos.logback.core.rolling.FixedWindowRollingPolicy">
-            <FileNamePattern>/home/santhosh/santhosh2129-inventory.%i.log.zip
+            <FileNamePattern>/Users/santhosh/santhosh2129-inventory.%i.log.zip
             </FileNamePattern>
             <MinIndex>1</MinIndex>
             <MaxIndex>10</MaxIndex>
